@@ -1,0 +1,11 @@
+# Archivos locales del sistema y del editor
+.DS_Store
+Thumbs.db
+Desktop.ini
+.vscode/
+
+# Registros y archivos temporales
+*.log
+*.tmp
+*.swp
+
