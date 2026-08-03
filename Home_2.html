@@ -1,6 +1,23 @@
-<html>
+<html lang="es" class="wedding-boot-pending">
 
 <head>
+    <style data-wedding-initial-gate>
+        html.wedding-boot-pending,
+        html.wedding-boot-pending body {
+            background: #eeeeee;
+        }
+
+        #main {
+            opacity: 1;
+            transition: opacity 220ms ease-out;
+        }
+
+        html.wedding-boot-pending #main {
+            visibility: hidden !important;
+            opacity: 0 !important;
+            pointer-events: none !important;
+        }
+    </style>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
     <meta name="generator" content="Framer 089ff9b">
@@ -9955,6 +9972,36 @@
     <iframe id="__framer-editorbar"
         src="https://framer.com/edit?framerSiteId=d8eab1aba9b82f9353f2787c19649627861d830d283c41be16bf220322e2576f&amp;source=loventinvita.store&amp;features=%7B%22editorBarDisableFrameAncestorsSecurity%22%3Afalse%2C%22onPageLocalizationSupport%22%3Atrue%2C%22onPageMoveTool%22%3Atrue%2C%22onPageRichTextBlockSelection%22%3Atrue%7D&amp;loadStart=1785621493245"
         aria-hidden="true" allow="autoplay" tabindex="-1" class="status_hidden"></iframe>
+<script data-wedding-initial-gate>
+(() => {
+  const root = document.documentElement;
+  const main = document.getElementById("main");
+  let revealed = false;
+
+  const reveal = () => {
+    if (revealed) return;
+    revealed = true;
+    observer.disconnect();
+    requestAnimationFrame(() => {
+      root.classList.remove("wedding-boot-pending");
+      root.classList.add("wedding-boot-ready");
+    });
+  };
+
+  const envelopeIsClosed = () => {
+    const envelope = document.querySelector(".framer-VnMkq");
+    return envelope && !envelope.classList.contains("framer-v-11xdbzh");
+  };
+
+  const observer = new MutationObserver(() => {
+    if (envelopeIsClosed()) reveal();
+  });
+
+  if (main) observer.observe(main, { childList: true, subtree: true, attributes: true, attributeFilter: ["class"] });
+  if (envelopeIsClosed()) reveal();
+  setTimeout(reveal, 3000);
+})();
+</script>
 <script data-wedding-personalization>
 (() => {
   const names = "María Fernanda y Jaduar";
@@ -10056,6 +10103,14 @@
   .framer-OpxqD .framer-zcgbq:focus-visible {
     outline: 2px solid #4E7943 !important;
     outline-offset: 3px !important;
+  }
+
+  /* Encuadre correcto de las dos fotografías grandes en escritorio. */
+  @media (min-width: 1200px) {
+    .framer-OpxqD [data-framer-name="imagen portada"] img,
+    .framer-OpxqD .framer-1efq5lh[data-framer-name="foto"] img {
+      object-position: center center !important;
+    }
   }
 </style>
 <script data-wedding-rsvp-link>
