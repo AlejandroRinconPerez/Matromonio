@@ -10259,6 +10259,7 @@
     text-transform: none !important;
   }
 
+  .framer-OpxqD .framer-r18jov .framer-text,
   .framer-OpxqD .framer-5772b0 .framer-text {
     --framer-font-family: "Imperial Script", "Pinyon Script", cursive !important;
     --framer-text-color: #4E7943 !important;
@@ -10272,18 +10273,19 @@
     text-shadow: none !important;
   }
 
-  /* Capa clara para separar los nombres de la fotografía sin usar brillo. */
+  /* Portada abierta: fotografía limpia, sin overlay, y nombres en negro. */
   .framer-OpxqD .framer-1qskix8::after {
-    content: "";
-    position: absolute;
-    inset: 0;
-    z-index: 1;
-    pointer-events: none;
-    background: linear-gradient(180deg, rgba(247, 246, 242, .58) 0%, rgba(247, 246, 242, .42) 56%, rgba(247, 246, 242, .14) 100%);
+    content: none !important;
+    background: none !important;
   }
 
   .framer-OpxqD .framer-r18jov {
     z-index: 2 !important;
+  }
+
+  .framer-OpxqD .framer-5772b0 .framer-text {
+    --framer-text-color: #111 !important;
+    color: #111 !important;
   }
 
   /* Textura floral blanca detrás del sobre mientras permanece cerrado. */
@@ -10356,7 +10358,17 @@
 
   @media (max-width: 1199.98px) {
     .framer-VnMkq .framer-1bf5fl7 {
-      top: -36px !important;
+      top: clamp(48px, 8svh, 72px) !important;
+      transition: top .7s cubic-bezier(.22, .61, .36, 1) !important;
+    }
+
+    /* Al abrir, el conjunto baja suavemente para que la tarjeta no se corte. */
+    .framer-VnMkq:not(.framer-v-b33t8x) .framer-1bf5fl7 {
+      top: clamp(156px, 24svh, 210px) !important;
+    }
+
+    .framer-VnMkq .framer-n2t9tj {
+      top: -250px !important;
     }
 
     .framer-VnMkq .framer-tqa7ob .framer-text {
