@@ -10266,11 +10266,12 @@
     font-family: "Imperial Script", "Pinyon Script", cursive !important;
     color: #4E7943 !important;
     font-size: clamp(62px, 8vw, 104px) !important;
-    font-weight: 400 !important;
+    font-weight: 600 !important;
     line-height: .95 !important;
     letter-spacing: .01em !important;
     text-transform: none !important;
     text-shadow: none !important;
+    -webkit-text-stroke: .25px currentColor;
   }
 
   /* Portada abierta: fotografía limpia, sin overlay, y nombres en negro. */
@@ -10283,6 +10284,7 @@
     z-index: 2 !important;
   }
 
+  .framer-OpxqD .framer-r18jov .framer-text,
   .framer-OpxqD .framer-5772b0 .framer-text {
     --framer-text-color: #111 !important;
     color: #111 !important;
@@ -10296,6 +10298,17 @@
     background-repeat: repeat !important;
     background-size: 480px auto !important;
     opacity: 1 !important;
+  }
+
+  /* Al abrir, retira de inmediato la capa de fondo para no cubrir los nombres. */
+  .framer-VnMkq:not(.framer-v-b33t8x) .framer-xmuuvo {
+    background-color: transparent !important;
+  }
+
+  .framer-VnMkq:not(.framer-v-b33t8x) .framer-cjgpj0 {
+    background: transparent !important;
+    opacity: 0 !important;
+    transition: none !important;
   }
 
   /* La cita reemplaza el mensaje de cierre original. */
