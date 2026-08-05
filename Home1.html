@@ -17,6 +17,7 @@
             opacity: 0 !important;
             pointer-events: none !important;
         }
+
     </style>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
@@ -9394,11 +9395,11 @@
                                 </div>
                                 <div style="display:flex;flex-direction:column;align-items:center;gap:10px">
                                     <div style="font-size:36px;font-family:new icon serif">33</div>
-                                    <div style="font-size:15px;font-family:'Inria Serif', serif">Min</div>
+                                    <div style="font-size:15px;font-family:'Inria Serif', serif">Minutos</div>
                                 </div>
                                 <div style="display:flex;flex-direction:column;align-items:center;gap:10px">
                                     <div style="font-size:36px;font-family:new icon serif">50</div>
-                                    <div style="font-size:15px;font-family:'Inria Serif', serif">Seg</div>
+                                    <div style="font-size:15px;font-family:'Inria Serif', serif">Segundos</div>
                                 </div>
                             </div>
                         </div><!--/$-->
@@ -10028,7 +10029,7 @@
                     style="justify-content:center;transform:none">
                     <p dir="auto"
                         style="--font-selector:R0Y7SW5yaWEgU2VyaWYtaXRhbGlj;--framer-font-family:&quot;Inria Serif&quot;, &quot;Inria Serif Placeholder&quot;, serif;--framer-font-size:14px;--framer-font-style:italic;--framer-letter-spacing:0.06em;--framer-text-alignment:center"
-                        class="framer-text">Estaremos felices de verte</p>
+                        class="framer-text">“El cordón de tres dobleces no se rompe fácilmente”. — Ecl 4:12</p>
                 </div>
             </div>
         </div>
@@ -10161,6 +10162,7 @@
     place-content: center !important;
     justify-content: center !important;
     align-items: center !important;
+    top: -28px !important;
   }
 
   .framer-VnMkq .framer-1wfl5es,
@@ -10219,6 +10221,166 @@
   .framer-OpxqD .framer-zcgbq:focus-visible {
     outline: 2px solid #4E7943 !important;
     outline-offset: 3px !important;
+  }
+
+  /* Tipografías más elegantes para la apertura del sobre. */
+  .framer-VnMkq .framer-jk0syl .framer-text {
+    --framer-font-family: "Cormorant Garamond", "Cormorant", serif !important;
+    font-family: "Cormorant Garamond", "Cormorant", serif !important;
+    font-size: 15px !important;
+    font-style: italic !important;
+    font-weight: 600 !important;
+    letter-spacing: .04em !important;
+  }
+
+  /* Evita que los trazos de la tipografía se corten debajo del sobre. */
+  .framer-VnMkq .framer-13h3pok {
+    width: 100% !important;
+    height: 126px !important;
+    padding: 10px 12px !important;
+    overflow: visible !important;
+  }
+
+  .framer-VnMkq .framer-tqa7ob {
+    width: 350px !important;
+    max-width: 92vw !important;
+    overflow: visible !important;
+  }
+
+  .framer-VnMkq .framer-tqa7ob .framer-text {
+    --framer-font-family: "Imperial Script", "Pinyon Script", cursive !important;
+    --framer-text-color: #4E7943 !important;
+    font-family: "Imperial Script", "Pinyon Script", cursive !important;
+    color: #4E7943 !important;
+    font-size: 46px !important;
+    font-weight: 400 !important;
+    line-height: .95 !important;
+    letter-spacing: .01em !important;
+    text-transform: none !important;
+  }
+
+  .framer-OpxqD .framer-5772b0 .framer-text {
+    --framer-font-family: "Imperial Script", "Pinyon Script", cursive !important;
+    --framer-text-color: #4E7943 !important;
+    font-family: "Imperial Script", "Pinyon Script", cursive !important;
+    color: #4E7943 !important;
+    font-size: clamp(62px, 8vw, 104px) !important;
+    font-weight: 400 !important;
+    line-height: .95 !important;
+    letter-spacing: .01em !important;
+    text-transform: none !important;
+    text-shadow: none !important;
+  }
+
+  /* Capa clara para separar los nombres de la fotografía sin usar brillo. */
+  .framer-OpxqD .framer-1qskix8::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+    pointer-events: none;
+    background: linear-gradient(180deg, rgba(247, 246, 242, .58) 0%, rgba(247, 246, 242, .42) 56%, rgba(247, 246, 242, .14) 100%);
+  }
+
+  .framer-OpxqD .framer-r18jov {
+    z-index: 2 !important;
+  }
+
+  /* Textura floral blanca detrás del sobre mientras permanece cerrado. */
+  .framer-VnMkq:not(.framer-v-11xdbzh) .framer-cjgpj0 {
+    background-color: #f7f6f2 !important;
+    background-image: url("assets/framerusercontent.com/images/K1T8UAkZlnVcWtIc9YszHk3pJCQ.png") !important;
+    background-position: center top !important;
+    background-repeat: repeat !important;
+    background-size: 480px auto !important;
+    opacity: 1 !important;
+  }
+
+  /* La cita reemplaza el mensaje de cierre original. */
+  .framer-OpxqD .framer-pr26gk {
+    min-height: 94px !important;
+    height: auto !important;
+    padding: 22px 18px !important;
+    background-color: #4E7943 !important;
+  }
+
+  .framer-OpxqD .framer-1wsw2hh {
+    width: min(92%, 760px) !important;
+    height: auto !important;
+  }
+
+  .framer-OpxqD .framer-1wsw2hh .framer-text {
+    --framer-font-family: "Cormorant Garamond", "Cormorant", serif !important;
+    --framer-text-color: #fff !important;
+    color: #fff !important;
+    font-family: "Cormorant Garamond", "Cormorant", serif !important;
+    font-size: clamp(18px, 2.5vw, 24px) !important;
+    font-style: italic !important;
+    font-weight: 600 !important;
+    line-height: 1.3 !important;
+    letter-spacing: .025em !important;
+  }
+
+  /* El contador conserva sus cuatro columnas sin invadir el texto. */
+  .framer-OpxqD .framer-1g8y65r-container {
+    width: min(100%, 390px) !important;
+    max-width: 100% !important;
+  }
+
+  .framer-OpxqD .framer-1g8y65r-container > div {
+    width: 100% !important;
+  }
+
+  .framer-OpxqD .framer-1g8y65r-container > div > div {
+    display: grid !important;
+    grid-template-columns: repeat(4, minmax(0, 1fr)) !important;
+    gap: clamp(10px, 3vw, 28px) !important;
+    width: 100% !important;
+  }
+
+  .framer-OpxqD .framer-1g8y65r-container > div > div > div {
+    min-width: 0 !important;
+    gap: 6px !important;
+  }
+
+  .framer-OpxqD .framer-1g8y65r-container > div > div > div > div:first-child {
+    font-size: clamp(28px, 8vw, 36px) !important;
+    line-height: 1 !important;
+  }
+
+  .framer-OpxqD .framer-1g8y65r-container > div > div > div > div:last-child {
+    font-size: 13px !important;
+    line-height: 1.1 !important;
+    white-space: nowrap !important;
+  }
+
+  @media (max-width: 1199.98px) {
+    .framer-VnMkq .framer-1bf5fl7 {
+      top: -36px !important;
+    }
+
+    .framer-VnMkq .framer-tqa7ob .framer-text {
+      font-size: 42px !important;
+    }
+
+    .framer-OpxqD .framer-5772b0 .framer-text {
+      font-size: clamp(48px, 15vw, 66px) !important;
+    }
+
+    .framer-OpxqD .framer-19zm9c4 {
+      min-height: 900px !important;
+    }
+
+    .framer-OpxqD .framer-1ohdkde {
+      top: auto !important;
+      bottom: 42px !important;
+      gap: 16px !important;
+      overflow: visible !important;
+    }
+
+    .framer-OpxqD .framer-1g8y65r-container {
+      width: min(100%, 328px) !important;
+    }
   }
 
   /* Encuadre correcto de las dos fotografías grandes en escritorio. */
@@ -10374,9 +10536,7 @@
   if (window.__weddingVideoGateInstalled) return;
   window.__weddingVideoGateInstalled = true;
 
-  const storageKey = "mafe-jaduar-video-bienvenida-v1";
   const videoSource = "assets/media/mafe-jaduar-bienvenida.mp4";
-  const forceReplay = new URLSearchParams(window.location.search).has("repetir-video");
   let overlay = null;
   let bypassTrigger = null;
   let completedInMemory = false;
@@ -10388,20 +10548,10 @@
     .trim()
     .toLowerCase();
 
-  const wasCompleted = () => {
-    if (forceReplay) return false;
-    try {
-      return completedInMemory || localStorage.getItem(storageKey) === "completo";
-    } catch (_) {
-      return completedInMemory;
-    }
-  };
+  const wasCompleted = () => completedInMemory;
 
   const saveCompletion = () => {
     completedInMemory = true;
-    try {
-      localStorage.setItem(storageKey, "completo");
-    } catch (_) { }
   };
 
   const findDetailsTrigger = target => {
