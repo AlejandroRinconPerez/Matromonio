@@ -10229,7 +10229,7 @@
     font-family: "Cormorant Garamond", "Cormorant", serif !important;
     font-size: 15px !important;
     font-style: italic !important;
-    font-weight: 600 !important;
+    font-weight: 500 !important;
     letter-spacing: .04em !important;
   }
 
@@ -10271,7 +10271,7 @@
     letter-spacing: .01em !important;
     text-transform: none !important;
     text-shadow: none !important;
-    -webkit-text-stroke: .25px currentColor;
+    -webkit-text-stroke: .1px currentColor;
   }
 
   /* Portada abierta: fotografía limpia, sin overlay, y nombres en negro. */
@@ -10300,15 +10300,14 @@
     opacity: 1 !important;
   }
 
-  /* Al abrir, retira de inmediato la capa de fondo para no cubrir los nombres. */
-  .framer-VnMkq:not(.framer-v-b33t8x) .framer-xmuuvo {
-    background-color: transparent !important;
+  /* Conserva el fondo floral durante toda la apertura y recorta únicamente
+     el rectángulo inferior del respaldo verde del sobre abierto. */
+  .framer-VnMkq:not(.framer-v-11xdbzh) .framer-xmuuvo {
+    background-color: #f7f6f2 !important;
   }
 
-  .framer-VnMkq:not(.framer-v-b33t8x) .framer-cjgpj0 {
-    background: transparent !important;
-    opacity: 0 !important;
-    transition: none !important;
+  .framer-VnMkq .framer-76mo2 {
+    clip-path: inset(0 0 262px 0) !important;
   }
 
   /* La cita reemplaza el mensaje de cierre original. */
