@@ -6,11 +6,5 @@
       "destination": "/",
       "permanent": true
     }
-  ],
-  "rewrites": [
-    {
-      "source": "/",
-      "destination": "/Home_2.html"
-    }
   ]
 }
