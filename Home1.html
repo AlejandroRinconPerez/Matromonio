@@ -9537,10 +9537,10 @@
                         <div class="framer-1kyjxhh" data-framer-name="subir aqui la imagen de itinerario">
                             <div style="position:absolute;border-radius:inherit;corner-shape:inherit;top:0;right:0;bottom:0;left:0"
                                 data-framer-background-image-wrapper="true"><img decoding="async" loading="lazy"
-                                    width="912" height="1147"
+                                    width="865" height="1255"
                                     sizes="(min-width: 1200px) 353px, (max-width: 1199.98px) 353px"
-                                    srcset="assets/framerusercontent.com/images/mafe-jaduar-itinerario.jpeg 353w"
-                                    src="assets/framerusercontent.com/images/mafe-jaduar-itinerario.jpeg"
+                                    srcset="assets/framerusercontent.com/images/mafe-jaduar-itinerario-agosto-2026.jpeg 353w"
+                                    src="assets/framerusercontent.com/images/mafe-jaduar-itinerario-agosto-2026.jpeg"
                                     alt=""
                                     style="display:block;width:100%;height:100%;border-radius:inherit;corner-shape:inherit;object-position:center top;object-fit:contain">
                             </div>
@@ -10259,19 +10259,19 @@
     text-transform: none !important;
   }
 
-  .framer-OpxqD .framer-r18jov .framer-text,
-  .framer-OpxqD .framer-5772b0 .framer-text {
-    --framer-font-family: "Imperial Script", "Pinyon Script", cursive !important;
-    --framer-text-color: #4E7943 !important;
-    font-family: "Imperial Script", "Pinyon Script", cursive !important;
-    color: #4E7943 !important;
-    font-size: clamp(62px, 8vw, 104px) !important;
-    font-weight: 600 !important;
-    line-height: .95 !important;
-    letter-spacing: .01em !important;
-    text-transform: none !important;
+  /* Nombres principales con la misma tipografía de los títulos de la invitación. */
+  .framer-OpxqD .framer-r18jov .framer-text {
+    --framer-font-family: "New Icon Serif Regular", "New Icon Serif Regular Placeholder", serif !important;
+    --framer-text-color: #111 !important;
+    font-family: "New Icon Serif Regular", "New Icon Serif Regular Placeholder", serif !important;
+    color: #111 !important;
+    font-size: clamp(60px, 7vw, 88px) !important;
+    font-weight: 500 !important;
+    line-height: 1 !important;
+    letter-spacing: .015em !important;
+    text-transform: uppercase !important;
     text-shadow: none !important;
-    -webkit-text-stroke: .1px currentColor;
+    -webkit-text-stroke: 0;
   }
 
   /* Portada abierta: fotografía limpia, sin overlay, y nombres en negro. */
@@ -10282,12 +10282,6 @@
 
   .framer-OpxqD .framer-r18jov {
     z-index: 2 !important;
-  }
-
-  .framer-OpxqD .framer-r18jov .framer-text,
-  .framer-OpxqD .framer-5772b0 .framer-text {
-    --framer-text-color: #111 !important;
-    color: #111 !important;
   }
 
   /* Textura floral blanca detrás del sobre mientras permanece cerrado. */
@@ -10335,14 +10329,40 @@
     letter-spacing: .025em !important;
   }
 
+  /* Separación estable en Safari: no depende de flex-gap ni de min-content. */
+  .framer-OpxqD .framer-1ohdkde {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 0 !important;
+    height: auto !important;
+    min-height: 0 !important;
+    overflow: visible !important;
+  }
+
+  .framer-OpxqD .framer-xgxdg9 {
+    flex: 0 0 auto !important;
+    width: min(100%, 338px) !important;
+    margin: 0 0 24px !important;
+  }
+
+  .framer-OpxqD .framer-xgxdg9 .framer-text {
+    line-height: 1.35 !important;
+  }
+
   /* El contador conserva sus cuatro columnas sin invadir el texto. */
   .framer-OpxqD .framer-1g8y65r-container {
+    flex: 0 0 auto !important;
     width: min(100%, 390px) !important;
     max-width: 100% !important;
+    margin: 0 !important;
   }
 
   .framer-OpxqD .framer-1g8y65r-container > div {
     width: 100% !important;
+    height: auto !important;
+    min-height: 62px !important;
   }
 
   .framer-OpxqD .framer-1g8y65r-container > div > div {
@@ -10369,10 +10389,10 @@
   }
 
   @media (max-width: 1199.98px) {
-    .framer-OpxqD .framer-r18jov .framer-text,
-    .framer-OpxqD .framer-5772b0 .framer-text {
+    .framer-OpxqD .framer-r18jov .framer-text {
       --framer-text-color: #fff !important;
       color: #fff !important;
+      font-size: clamp(52px, 14vw, 64px) !important;
     }
 
     .framer-VnMkq .framer-1bf5fl7 {
@@ -10387,12 +10407,8 @@
     }
 
     .framer-VnMkq .framer-tqa7ob .framer-text {
-      font-size: 36px !important;
+      font-size: 39px !important;
       line-height: 1 !important;
-    }
-
-    .framer-OpxqD .framer-5772b0 .framer-text {
-      font-size: clamp(48px, 15vw, 66px) !important;
     }
 
     .framer-OpxqD .framer-19zm9c4 {
@@ -10402,8 +10418,12 @@
     .framer-OpxqD .framer-1ohdkde {
       top: auto !important;
       bottom: 42px !important;
-      gap: 16px !important;
+      gap: 0 !important;
       overflow: visible !important;
+    }
+
+    .framer-OpxqD .framer-xgxdg9 {
+      margin-bottom: 26px !important;
     }
 
     .framer-OpxqD .framer-1g8y65r-container {
